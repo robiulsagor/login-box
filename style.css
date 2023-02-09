@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px #0dee1cbe, 0 0 10px #0dee1cce, 0 6px 10px #72ee0da9, 2px 0 10px #0dee8c;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: #000;
+}
+
+h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+form input {
+    width: 60%;
+    border: 3px outset #79e619;
+    background: transparent;
+    border-radius: 25px;
+    padding: 8px 10px;
+    height: 48px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    transition: .3s;
+    font-family: inherit
+}
+
+form input:focus {
+    width: 90%;
+}
+
+form input[type=submit] {
+    cursor: pointer;
+    width: 60%;
+    transition: .3s;
+}
+
+form input[type=submit]:hover {
+    background: #79e619cd;
+}
